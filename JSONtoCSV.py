@@ -1,11 +1,13 @@
 
-
+import sys
 import os
 import json
 import csv
 
-json_file = 'facebook.da.influencers.json'
-csv_file = 'facebook.da.influencers.csv'
+json_file = sys.argv[1]
+csv_file = sys.argv[2]
+# json_file = 'facebook.da.influencers.json'
+# csv_file = 'facebook.da.influencers.csv'
 
 if os.path.exists(json_file):
 
